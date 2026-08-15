@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #e6f4ff);
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #ff6b9d;
+    color: white;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.form-section,
+.search-section,
+.birthday-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-section h2,
+.birthday-section h2 {
+    margin-bottom: 20px;
+    color: #ff4081;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4081;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e91e63;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    color: #ff4081;
+}
+
+.stat-card p {
+    margin-top: 5px;
+}
+
+.birthday-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff0f5;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #ff4081;
+}
+
+.birthday-info h3 {
+    color: #d81b60;
+    margin-bottom: 7px;
+}
+
+.birthday-info p {
+    margin: 5px 0;
+}
+
+.days {
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.delete-btn {
+    background: #f44336;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.delete-btn:hover {
+    background: #c62828;
+}
+
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .birthday-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
